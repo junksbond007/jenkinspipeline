@@ -6,9 +6,9 @@ pipeline {
          string(name: 'tomcat_prod', defaultValue: 'localhost:8011', description: 'Production Server')
     } 
 
-    triggers {
+    //triggers {
          //pollSCM('* * * * *') // Polling Source Control
-     }
+    // }
 
 stages{
         stage('Build'){
